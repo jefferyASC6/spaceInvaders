@@ -42,7 +42,13 @@ function pac(){
         x1 = 375;
         x3 = 350;
         triMovement();
-    } else {
+    }
+    else if (circleLocationY >= 575){
+        x1 = 200;
+        x2 = 225;
+        x3 = 175;
+    }
+    else {
         triMovement();}
 }
 
@@ -51,14 +57,12 @@ function enemyMovement(){
 circleLocationX += speedX;
 if (circleLocationX >= 375){
     speedX *= -1;
-    circleLocationY+=30;
+    circleLocationY+=40;
     } else if (circleLocationX <= 25){
     speedX *= negSpeedX;
-    circleLocationY+=30;
+    circleLocationY+=40;
     }
-    else if (circleLocationY >= 600){
-        circleLocationY=600;
-        circleLocationX=200;
+    else if (circleLocationY > 575){
         textSize(50);
         fill(255,0,0);
         textAlign(CENTER);
