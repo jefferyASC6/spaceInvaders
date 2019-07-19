@@ -63,6 +63,7 @@ if (circleLocationX >= 375){
     circleLocationY+=40;
     }
     else if (circleLocationY > 575){
+        speedX = 0;
         textSize(50);
         fill(255,0,0);
         textAlign(CENTER);
