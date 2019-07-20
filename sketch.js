@@ -43,7 +43,7 @@ function pac(){
         x3 = 350;
         triMovement();
     }
-    else if (circleLocationY >= 575){
+    else if (circleLocationY > 575){
         x1 = 200;
         x2 = 225;
         x3 = 175;
